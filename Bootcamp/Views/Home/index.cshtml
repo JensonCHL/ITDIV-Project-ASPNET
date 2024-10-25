@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<h1 class="text-2xl font-bold mb-4">Search for Available Cars</h1>
+
+<form action="/Cars/Search" method="get" class="mb-4">
+    <input type="text" name="searchTerm" placeholder="Enter car name or model" class="border rounded p-2 mr-2" />
+    <input type="date" name="startDate" class="border rounded p-2 mr-2" />
+    <input type="date" name="endDate" class="border rounded p-2 mr-2" />
+    <button type="submit" class="bg-blue-600 text-white rounded p-2">Search</button>
+</form>
+
+<div id="available-cars">
+    <!-- Here you will display the available cars -->
+</div>

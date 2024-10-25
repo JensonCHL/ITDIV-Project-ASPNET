@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\ITDIV\\MiniProject\\ASP\\Bootcamp\\Bootcamp\\Bootcamp.csproj": {}
+    "D:\\ITDIV\\MiniProject\\ASP\\Bootcamp\\Bootcamp\\Bootcamp.csproj": {}
   },
   "projects": {
-    "d:\\ITDIV\\MiniProject\\ASP\\Bootcamp\\Bootcamp\\Bootcamp.csproj": {
+    "D:\\ITDIV\\MiniProject\\ASP\\Bootcamp\\Bootcamp\\Bootcamp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\ITDIV\\MiniProject\\ASP\\Bootcamp\\Bootcamp\\Bootcamp.csproj",
+        "projectUniqueName": "D:\\ITDIV\\MiniProject\\ASP\\Bootcamp\\Bootcamp\\Bootcamp.csproj",
         "projectName": "Bootcamp",
-        "projectPath": "d:\\ITDIV\\MiniProject\\ASP\\Bootcamp\\Bootcamp\\Bootcamp.csproj",
+        "projectPath": "D:\\ITDIV\\MiniProject\\ASP\\Bootcamp\\Bootcamp\\Bootcamp.csproj",
         "packagesPath": "C:\\Users\\j3n50\\.nuget\\packages\\",
-        "outputPath": "d:\\ITDIV\\MiniProject\\ASP\\Bootcamp\\Bootcamp\\obj\\",
+        "outputPath": "D:\\ITDIV\\MiniProject\\ASP\\Bootcamp\\Bootcamp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\j3n50\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Bootcamp.Models;
 
@@ -7,6 +8,7 @@ public class MsCustomer
 {
     [Key]
     [MaxLength(36)]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public string CustomerId { get; set; }
 
     [MaxLength(100)]

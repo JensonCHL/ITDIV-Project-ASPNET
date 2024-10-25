@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - RentCar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="bg-gray-100">
+    <div>
+        <!-- Navigation Bar -->
+        <nav class="bg-white shadow">
+            <div class="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
+                <div class="flex items-center">
+                    <button id="hamburger" class="text-gray-600 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+                    </button>
+                    <a href="/" class="text-lg font-bold ml-4">RentCar</a>
+                </div>
+                <div>
+                    <a href="/Account/Login" class="text-blue-600 hover:text-blue-800 mr-4">Login</a>
+                    <a href="/Account/Register" class="text-blue-600 hover:text-blue-800">Register</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hamburger Menu -->
+        <div id="menu" class="hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-10">
+            <div class="bg-white w-64 h-full p-4">
+                <h2 class="text-xl font-bold mb-4">Menu</h2>
+                <ul>
+                    <li class="mb-2"><a href="/" class="text-gray-700 hover:text-blue-600">Home</a></li>
+                    <li class="mb-2"><a href="/RentalHistory" class="text-gray-700 hover:text-blue-600">Riwayat Penyewaan</a></li>
+                    <li class="mb-2"><a href="/Contact" class="text-gray-700 hover:text-blue-600">Kontak Kami</a></li>
+                </ul>
+                <button id="close-menu" class="mt-4 text-red-500">Close Menu</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container mx-auto mt-8 p-4">
+            @RenderBody()
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#hamburger").click(function() {
+                $("#menu").removeClass("hidden");
+            });
+            $("#close-menu").click(function() {
+                $("#menu").addClass("hidden");
+            });
+        });
+    </script>
+</body>
+</html>

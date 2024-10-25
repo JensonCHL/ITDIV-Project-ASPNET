@@ -86,7 +86,10 @@ CREATE TABLE LtPayment (
     rental_id NVARCHAR(36),
     FOREIGN KEY (rental_id) REFERENCES TrRental(rental_id) 
 );
-
-
+GO
+INSERT INTO MsCar (car_id, name, model, year, license_plate, number_of_car_seats, transmission, price_per_day, status)
+VALUES ('car_002', 'Toyota Calya', 'Calya', 2021, 'AB1981XYa', 7, 'Manual', 351230.00, 1);
+GO
+SELECT * FROM MsCar
 
 
